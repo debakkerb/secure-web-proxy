@@ -48,11 +48,11 @@ resource "google_project_iam_member" "tcp_iam_access" {
   role     = "roles/compute.instanceAdmin.v1"
 }
 
-resource "google_compute_route" "secure_web_proxy_next_hop" {
-  project      = data.google_project.default.project_id
-  name         = "secure-web-route"
-  network      = google_compute_network.standard.name
-  dest_range   = "0.0.0.0/0"
-  next_hop_ilb = google_network_services_gateway.default.addresses.0
-  tags         = ["all"]
-}
+# resource "google_compute_route" "secure_web_proxy_next_hop" {
+#   project      = data.google_project.default.project_id
+#   name         = "secure-web-route"
+#   network      = google_compute_network.standard.name
+#   dest_range   = "0.0.0.0/0"
+#   next_hop_ilb = google_network_services_gateway.default.addresses.0
+#   tags         = ["all"]
+# }
