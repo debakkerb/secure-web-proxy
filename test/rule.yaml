@@ -1,0 +1,6 @@
+name: projects/tst-swp-dev/locations/europe-west1/gatewaySecurityPolicies/test-policy/rules/allow-google-com
+description: Allow google.com
+enabled: true
+priority: 1
+basicProfile: ALLOW
+sessionMatcher: host() == 'google.com'
