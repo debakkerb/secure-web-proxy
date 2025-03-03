@@ -47,3 +47,5 @@ resource "google_project_iam_member" "tcp_iam_access" {
   member   = each.value
   role     = "roles/compute.instanceAdmin.v1"
 }
+
+// outbound traffic
