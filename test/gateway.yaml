@@ -1,6 +1,0 @@
-name: projects/tst-swp-dev/locations/europe-west1/gateways/secure-web-proxy-manual
-type: SECURE_WEB_GATEWAY
-ports: [80]
-gatewaySecurityPolicy: projects/tst-swp-dev/locations/europe-west1/gatewaySecurityPolicies/test-policy
-network: projects/tst-swp-dev/global/networks/web-proxy-tst-network
-subnetwork: projects/tst-swp-dev/regions/europe-west1/subnetworks/resources

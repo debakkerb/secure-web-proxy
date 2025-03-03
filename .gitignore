@@ -3,3 +3,5 @@ terraform.tfvars
 *tfstate*
 *.hcl
 .idea/
+
+manual/
